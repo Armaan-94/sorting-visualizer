@@ -5,43 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorting Visualizer</title>
     <style>
-
-        body{
+        body {
             margin: 0;
             font-family: Arial, sans-serif;
         }
-        .navbar{
+        .navbar {
             background-color: black;
             padding: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-wrap: wrap;
         }
-        .navbar a{
+        .navbar a {
             text-decoration: none;
         }
-        .navbar button{
+        .navbar button {
             background-color: blue;
             color: white;
             padding: 14px 20px;
-            margin: 0 15px;
+            margin: 5px;
             border: none;
             cursor: pointer;
             font-size: 16px;
             border-radius: 5px;
         }
-        .navbar button:hover{
+        .navbar button:hover {
             background-color: darkblue;
         }
-        .content{
+        .content {
             padding: 20px;
             text-align: center;
         }
-        h2{
+        h2 {
             font-weight: normal;
         }
-        img{
+        img {
             border: 5px solid #555;
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 600px) {
+            .navbar button {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            .content h1 {
+                font-size: 24px;
+            }
+            .content h2 {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
@@ -52,7 +67,7 @@
         <a href="./Sorting/Selection Sort/selectionSort.html"><button>Selection Sort</button></a>
         <a href="./Sorting/Insertion Sort/insertionSort.html"><button>Insertion Sort</button></a>
         <a href="./Sorting/Merge Sort/mergeSort.html"><button>Merge Sort</button></a>
-       <a href="./Sorting/Quick Sort/quickSort.html"><button>Quick Sort</button></a>
+        <a href="./Sorting/Quick Sort/quickSort.html"><button>Quick Sort</button></a>
     </div>
 
     <div class="content">
